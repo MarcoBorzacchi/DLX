@@ -1,0 +1,41 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'windowed_RF' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : windowed_RF
+Version: Z-2007.03-SP1
+Date   : Wed May  2 15:02:55 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Control_Unit/must_spill_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: spill (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  windowed_RF        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  Control_Unit/must_spill_reg/CK (DFF_X1)                 0.00 #     0.00 r
+  Control_Unit/must_spill_reg/Q (DFF_X1)                  0.11       0.11 r
+  Control_Unit/spill (register_CU_A5_M8_N9_F4_B64_L32_T5_Y3)
+                                                          0.00       0.11 r
+  spill (out)                                             0.00       0.12 r
+  data arrival time                                                  0.12
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

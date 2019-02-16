@@ -1,0 +1,52 @@
+###################################################################
+#SCRIPT FOR SPEEDING UP and RECORDING the REGISTER_BASIC SYNTHESIS#
+#								  #
+###################################################################
+remove_design -designs
+analyze -library WORK -format vhdl {constants.vhd}
+analyze -library WORK -format vhdl {functions.vhd}
+analyze -library WORK -format vhdl {register_file_w.vhd}
+analyze -library WORK -format vhdl {register_CU.vhd}
+analyze -library WORK -format vhdl {windowed_RF.vhd} 
+
+##############################################################
+# elaborating the top entity 
+elaborate CFG_STRUCT_WINDOWED_RF -library WORK
+##########################################
+
+# first compilation, without constraints #
+compile 
+
+
+# reporting timing and power after the first synthesis without constraints #
+report_timing > WRF_unconstrained.rpt
+
+# creating a CLK
+create_clock -name "clk" -period 2 clk
+report_clock
+
+# second compilation
+compile 
+
+
+# saving report
+report_timing > WRF_clocked.rpt
+
+# constraint between IO
+set_max_delay 2 -from [all_inputs] -to [all_outputs]
+
+# third compilation
+compile 
+
+
+# saving report
+report_timing > WRF_clocked_constrained.rpt
+
+compile -map_effort high
+
+report_timing > WRF_clocked_constrained_ME_high.rpt
+
+# saving files
+write -hierarchy -format vhdl -output NETLIST_WINDOWED_RF.vhdl
+
+

@@ -1,0 +1,88 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'windowed_RF' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : windowed_RF
+Version: Z-2007.03-SP1
+Date   : Wed May  2 15:04:47 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: add_wr[0] (input port)
+  Endpoint: Register_File_and_addresses/registers_reg[23][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  windowed_RF        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock (input port clock) (rise edge)                    0.00       0.00
+  input external delay                                    0.00       0.00 f
+  add_wr[0] (in)                                          0.00       0.00 f
+  Register_File_and_addresses/add_wr[0] (register_file_w_A5_M8_N9_F4_B64_L32_T5_Y3)
+                                                          0.00       0.00 f
+  Register_File_and_addresses/U4757/ZN (OR3_X1)           0.09       0.09 f
+  Register_File_and_addresses/U8111/ZN (AOI21_X2)         0.07       0.16 r
+  Register_File_and_addresses/U7296/ZN (INV_X1)           0.04       0.21 f
+  Register_File_and_addresses/r517/B[0] (register_file_w_A5_M8_N9_F4_B64_L32_T5_Y3_DW01_add_4)
+                                                          0.00       0.21 f
+  Register_File_and_addresses/r517/U1/ZN (AND2_X1)        0.05       0.26 f
+  Register_File_and_addresses/r517/U1_1/CO (FA_X1)        0.09       0.35 f
+  Register_File_and_addresses/r517/U1_2/CO (FA_X1)        0.09       0.44 f
+  Register_File_and_addresses/r517/U1_3/CO (FA_X1)        0.09       0.53 f
+  Register_File_and_addresses/r517/U1_4/S (FA_X1)         0.13       0.66 r
+  Register_File_and_addresses/r517/SUM[4] (register_file_w_A5_M8_N9_F4_B64_L32_T5_Y3_DW01_add_4)
+                                                          0.00       0.66 r
+  Register_File_and_addresses/U6894/ZN (INV_X1)           0.03       0.69 f
+  Register_File_and_addresses/U8084/ZN (AOI21_X2)         0.07       0.76 r
+  Register_File_and_addresses/U6675/ZN (INV_X1)           0.04       0.80 f
+  Register_File_and_addresses/U7567/ZN (AOI22_X1)         0.06       0.86 r
+  Register_File_and_addresses/U7622/ZN (OAI221_X1)        0.06       0.92 f
+  Register_File_and_addresses/U7162/ZN (NAND2_X2)         0.09       1.01 r
+  Register_File_and_addresses/U7161/ZN (INV_X1)           0.07       1.08 f
+  Register_File_and_addresses/U7606/ZN (NOR2_X1)          0.07       1.15 r
+  Register_File_and_addresses/U7581/ZN (AOI21_X1)         0.04       1.19 f
+  Register_File_and_addresses/U6969/ZN (AOI21_X1)         0.06       1.25 r
+  Register_File_and_addresses/U7134/ZN (INV_X1)           0.03       1.27 f
+  Register_File_and_addresses/U6617/ZN (XNOR2_X1)         0.06       1.33 f
+  Register_File_and_addresses/U5230/ZN (XNOR2_X1)         0.08       1.41 r
+  Register_File_and_addresses/U7647/ZN (INV_X1)           0.04       1.45 f
+  Register_File_and_addresses/U6736/ZN (NAND2_X1)         0.04       1.49 r
+  Register_File_and_addresses/U1102/ZN (INV_X1)           0.03       1.53 f
+  Register_File_and_addresses/U2131/ZN (NAND2_X2)         0.06       1.58 r
+  Register_File_and_addresses/U7550/ZN (OAI221_X1)        0.06       1.64 f
+  Register_File_and_addresses/U1359/Z (BUF_X1)            0.05       1.69 f
+  Register_File_and_addresses/U1214/Z (BUF_X1)            0.04       1.73 f
+  Register_File_and_addresses/U6/Z (BUF_X1)               0.05       1.77 f
+  Register_File_and_addresses/U126/ZN (INV_X1)            0.11       1.88 r
+  Register_File_and_addresses/U4137/ZN (OAI22_X1)         0.06       1.94 f
+  Register_File_and_addresses/registers_reg[23][0]/D (DFF_X1)
+                                                          0.01       1.95 f
+  data arrival time                                                  1.95
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  Register_File_and_addresses/registers_reg[23][0]/CK (DFF_X1)
+                                                          0.00       2.00 r
+  library setup time                                     -0.05       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
