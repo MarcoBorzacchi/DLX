@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : p4_adder
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 18:22:58 2018
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:               98
+Number of nets:               105
+Number of cells:                2
+Number of references:           2
+
+Combinational area:        590.519995
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           590.520020
+Total area:                 undefined
+

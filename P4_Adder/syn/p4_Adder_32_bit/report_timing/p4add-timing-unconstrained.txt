@@ -1,0 +1,87 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : p4_adder
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 18:02:49 2018
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[3] (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  p4_adder           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[3] (in)                                               0.00       0.00 f
+  carry_generator/A[3] (sparse_tree_N32_carry_step4_K8)
+                                                          0.00       0.00 f
+  carry_generator/row_0/A[3] (pg_network_N32)             0.00       0.00 f
+  carry_generator/row_0/U7/Z (XOR2_X1)                    0.08       0.08 f
+  carry_generator/row_0/P[3] (pg_network_N32)             0.00       0.08 f
+  carry_generator/pg_blocks_1_1_3/Pik (pg_block_0)        0.00       0.08 f
+  carry_generator/pg_blocks_1_1_3/U3/ZN (AOI21_X1)        0.05       0.13 r
+  carry_generator/pg_blocks_1_1_3/U2/ZN (INV_X1)          0.02       0.15 f
+  carry_generator/pg_blocks_1_1_3/Gij (pg_block_0)        0.00       0.15 f
+  carry_generator/g_blocks_1_2_3/Gik (g_block_8)          0.00       0.15 f
+  carry_generator/g_blocks_1_2_3/U2/ZN (AOI21_X1)         0.05       0.20 r
+  carry_generator/g_blocks_1_2_3/U1/ZN (INV_X1)           0.05       0.25 f
+  carry_generator/g_blocks_1_2_3/Gij (g_block_8)          0.00       0.25 f
+  carry_generator/g_blocks_1_3_7/Gk_1j (g_block_7)        0.00       0.25 f
+  carry_generator/g_blocks_1_3_7/U2/ZN (AOI21_X1)         0.06       0.31 r
+  carry_generator/g_blocks_1_3_7/U1/ZN (INV_X1)           0.05       0.36 f
+  carry_generator/g_blocks_1_3_7/Gij (g_block_7)          0.00       0.36 f
+  carry_generator/g_blocks_2_4_15_1/Gk_1j (g_block_5)     0.00       0.36 f
+  carry_generator/g_blocks_2_4_15_1/U2/ZN (AOI21_X1)      0.06       0.42 r
+  carry_generator/g_blocks_2_4_15_1/U1/ZN (INV_X1)        0.06       0.48 f
+  carry_generator/g_blocks_2_4_15_1/Gij (g_block_5)       0.00       0.48 f
+  carry_generator/g_blocks_2_5_27_1/Gk_1j (g_block_2)     0.00       0.48 f
+  carry_generator/g_blocks_2_5_27_1/U2/ZN (AOI21_X1)      0.06       0.54 r
+  carry_generator/g_blocks_2_5_27_1/U1/ZN (INV_X1)        0.05       0.59 f
+  carry_generator/g_blocks_2_5_27_1/Gij (g_block_2)       0.00       0.59 f
+  carry_generator/Cout[6] (sparse_tree_N32_carry_step4_K8)
+                                                          0.00       0.59 f
+  sum_generator/Ci[7] (carry_select_N32_carry_step4_K8)
+                                                          0.00       0.59 f
+  sum_generator/cs_blocks_8/ci (CS_BLOCK_carry_step4_1)
+                                                          0.00       0.59 f
+  sum_generator/cs_blocks_8/mux/SEL (MUX21_GENERIC_N4_1)
+                                                          0.00       0.59 f
+  sum_generator/cs_blocks_8/mux/muxes_3/S (MUX21_1)       0.00       0.59 f
+  sum_generator/cs_blocks_8/mux/muxes_3/UIV/A (IV_1)      0.00       0.59 f
+  sum_generator/cs_blocks_8/mux/muxes_3/UIV/U1/ZN (INV_X1)
+                                                          0.04       0.63 r
+  sum_generator/cs_blocks_8/mux/muxes_3/UIV/Y (IV_1)      0.00       0.63 r
+  sum_generator/cs_blocks_8/mux/muxes_3/UND2/B (ND2_2)
+                                                          0.00       0.63 r
+  sum_generator/cs_blocks_8/mux/muxes_3/UND2/U1/ZN (NAND2_X1)
+                                                          0.03       0.65 f
+  sum_generator/cs_blocks_8/mux/muxes_3/UND2/Y (ND2_2)
+                                                          0.00       0.65 f
+  sum_generator/cs_blocks_8/mux/muxes_3/UND3/B (ND2_1)
+                                                          0.00       0.65 f
+  sum_generator/cs_blocks_8/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.02       0.67 r
+  sum_generator/cs_blocks_8/mux/muxes_3/UND3/Y (ND2_1)
+                                                          0.00       0.67 r
+  sum_generator/cs_blocks_8/mux/muxes_3/Y (MUX21_1)       0.00       0.67 r
+  sum_generator/cs_blocks_8/mux/Y[3] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.67 r
+  sum_generator/cs_blocks_8/S[3] (CS_BLOCK_carry_step4_1)
+                                                          0.00       0.67 r
+  sum_generator/Sum[31] (carry_select_N32_carry_step4_K8)
+                                                          0.00       0.67 r
+  S[31] (out)                                             0.00       0.68 r
+  data arrival time                                                  0.68
+  --------------------------------------------------------------------------
+  (Path is unconstrained)

@@ -1,0 +1,6 @@
+Analyzing the adder the critical path turned out to be the one that brought the carry to the 8th block of the sum generator.
+The delay of the adder 0.68ns and it went down to 0.54ns after the optimization.
+
+The delay of the sum generator was 0.47ns and was reduced to 0.43ns when the design was optimized.
+On the other hand the delay of the sparse tree carry generator was  0.45ns and was reduced to 0.41ns by optimizing the design.
+
