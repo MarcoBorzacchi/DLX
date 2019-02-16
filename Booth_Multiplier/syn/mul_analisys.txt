@@ -1,0 +1,9 @@
+8 bit multiplier analisys
+
+The critical path for this multiplier goes from the B input through the booth encoder to the second MUX, then into the adder and out of the P port.
+The delay in this case was 0.83ns and it went down to 0.62ns after optimization.
+After the optimization the critical path changed, now going through the 2's complement hardware to the first MUX then to the A input of the adder and finally out of the P port.
+
+32 bit multiplier
+
+the delay of the 32b booth multiplier was 4.59ns and it went down to 3.37ns after the optimization.

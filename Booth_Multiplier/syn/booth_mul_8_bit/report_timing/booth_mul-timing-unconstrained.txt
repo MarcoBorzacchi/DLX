@@ -1,0 +1,105 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : booth_multiplier
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 20:02:50 2018
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  encoder/B[1] (booth_encoder_enc6)                       0.00       0.00 r
+  encoder/E[3] (booth_encoder_enc6)                       0.00       0.00 r
+  mux_1/SEL[0] (mux_5_to_1_generic_N8_1)                  0.00       0.00 r
+  mux_1/U35/ZN (NAND2_X1)                                 0.04       0.04 f
+  mux_1/U26/Z (XOR2_X1)                                   0.07       0.11 f
+  mux_1/U25/ZN (AND2_X1)                                  0.06       0.17 f
+  mux_1/U24/ZN (AOI222_X1)                                0.12       0.29 r
+  mux_1/U23/ZN (NAND2_X1)                                 0.06       0.35 f
+  mux_1/U[0] (mux_5_to_1_generic_N8_1)                    0.00       0.35 f
+  add_1/B[0] (p4_adder_N8_carry_step4_K2)                 0.00       0.35 f
+  add_1/sum_generator/B[0] (carry_select_N8_carry_step4_K2)
+                                                          0.00       0.35 f
+  add_1/sum_generator/cs_blocks_1/B[0] (CS_BLOCK_carry_step4_0)
+                                                          0.00       0.35 f
+  add_1/sum_generator/cs_blocks_1/rca_1/B[0] (RCA_N4_3)
+                                                          0.00       0.35 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_1/B (FA_12)
+                                                          0.00       0.35 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_1/U4/Z (XOR2_X1)
+                                                          0.09       0.45 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_1/U3/ZN (AOI22_X1)
+                                                          0.06       0.51 r
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_1/U2/ZN (INV_X1)
+                                                          0.03       0.54 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_1/Co (FA_12)
+                                                          0.00       0.54 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_2/Ci (FA_11)
+                                                          0.00       0.54 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_2/U3/ZN (AOI22_X1)
+                                                          0.06       0.60 r
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_2/U2/ZN (INV_X1)
+                                                          0.03       0.63 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_2/Co (FA_11)
+                                                          0.00       0.63 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_3/Ci (FA_10)
+                                                          0.00       0.63 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_3/U3/ZN (AOI22_X1)
+                                                          0.06       0.69 r
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_3/U2/ZN (INV_X1)
+                                                          0.03       0.72 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_3/Co (FA_10)
+                                                          0.00       0.72 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_4/Ci (FA_9)
+                                                          0.00       0.72 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_4/U1/Z (XOR2_X1)
+                                                          0.07       0.79 f
+  add_1/sum_generator/cs_blocks_1/rca_1/FAI_4/S (FA_9)
+                                                          0.00       0.79 f
+  add_1/sum_generator/cs_blocks_1/rca_1/S[3] (RCA_N4_3)
+                                                          0.00       0.79 f
+  add_1/sum_generator/cs_blocks_1/mux/A[3] (MUX21_GENERIC_N4_0)
+                                                          0.00       0.79 f
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/A (MUX21_5)
+                                                          0.00       0.79 f
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND1/A (ND2_15)
+                                                          0.00       0.79 f
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND1/U1/ZN (NAND2_X1)
+                                                          0.03       0.82 r
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND1/Y (ND2_15)
+                                                          0.00       0.82 r
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND3/A (ND2_13)
+                                                          0.00       0.82 r
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.02       0.84 f
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/UND3/Y (ND2_13)
+                                                          0.00       0.84 f
+  add_1/sum_generator/cs_blocks_1/mux/muxes_3/Y (MUX21_5)
+                                                          0.00       0.84 f
+  add_1/sum_generator/cs_blocks_1/mux/Y[3] (MUX21_GENERIC_N4_0)
+                                                          0.00       0.84 f
+  add_1/sum_generator/cs_blocks_1/S[3] (CS_BLOCK_carry_step4_0)
+                                                          0.00       0.84 f
+  add_1/sum_generator/Sum[3] (carry_select_N8_carry_step4_K2)
+                                                          0.00       0.84 f
+  add_1/S[3] (p4_adder_N8_carry_step4_K2)                 0.00       0.84 f
+  P[3] (out)                                              0.00       0.84 f
+  data arrival time                                                  0.84
+  --------------------------------------------------------------------------
+  (Path is unconstrained)

@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : booth_multiplier
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 20:18:55 2018
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:               64
+Number of nets:               569
+Number of cells:               17
+Number of references:          17
+
+Combinational area:       5443.157979
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          5443.158203
+Total area:                 undefined

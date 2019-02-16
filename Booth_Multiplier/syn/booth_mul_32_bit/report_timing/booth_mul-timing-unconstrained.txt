@@ -1,0 +1,525 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : booth_multiplier
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 20:18:55 2018
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port)
+  Endpoint: P[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  two_compl/A[0] (neg_data_N32)                           0.00       0.00 f
+  two_compl/sub_add_25/B[0] (neg_data_N32_DW01_sub_0)     0.00       0.00 f
+  two_compl/sub_add_25/U62/ZN (INV_X1)                    0.06       0.06 r
+  two_compl/sub_add_25/U61/ZN (AND2_X1)                   0.05       0.11 r
+  two_compl/sub_add_25/U60/ZN (AND2_X1)                   0.05       0.16 r
+  two_compl/sub_add_25/U59/ZN (AND2_X1)                   0.05       0.22 r
+  two_compl/sub_add_25/U58/ZN (AND2_X1)                   0.05       0.27 r
+  two_compl/sub_add_25/U57/ZN (AND2_X1)                   0.05       0.33 r
+  two_compl/sub_add_25/U56/ZN (AND2_X1)                   0.05       0.38 r
+  two_compl/sub_add_25/U55/ZN (AND2_X1)                   0.05       0.44 r
+  two_compl/sub_add_25/U54/ZN (AND2_X1)                   0.05       0.49 r
+  two_compl/sub_add_25/U53/ZN (AND2_X1)                   0.05       0.54 r
+  two_compl/sub_add_25/U52/ZN (AND2_X1)                   0.05       0.60 r
+  two_compl/sub_add_25/U51/ZN (AND2_X1)                   0.05       0.65 r
+  two_compl/sub_add_25/U50/ZN (AND2_X1)                   0.05       0.71 r
+  two_compl/sub_add_25/U49/ZN (AND2_X1)                   0.05       0.76 r
+  two_compl/sub_add_25/U48/ZN (AND2_X1)                   0.05       0.82 r
+  two_compl/sub_add_25/U47/ZN (AND2_X1)                   0.05       0.87 r
+  two_compl/sub_add_25/U15/Z (XOR2_X2)                    0.16       1.03 r
+  two_compl/sub_add_25/DIFF[16] (neg_data_N32_DW01_sub_0)
+                                                          0.00       1.03 r
+  two_compl/neg_A[16] (neg_data_N32)                      0.00       1.03 r
+  mux1_0/C[16] (mux_5_to_1_generic_N32_0)                 0.00       1.03 r
+  mux1_0/U80/ZN (AOI222_X1)                               0.05       1.08 f
+  mux1_0/U79/ZN (NAND2_X1)                                0.07       1.16 r
+  mux1_0/U[16] (mux_5_to_1_generic_N32_0)                 0.00       1.16 r
+  add_1/A[16] (p4_adder_N32_carry_step4_K8_0)             0.00       1.16 r
+  add_1/sum_generator/A[16] (carry_select_N32_carry_step4_K8_0)
+                                                          0.00       1.16 r
+  add_1/sum_generator/cs_blocks_5/A[0] (CS_BLOCK_carry_step4_52)
+                                                          0.00       1.16 r
+  add_1/sum_generator/cs_blocks_5/rca_1/A[0] (RCA_N4_103)
+                                                          0.00       1.16 r
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_1/A (FA_412)
+                                                          0.00       1.16 r
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_1/U4/Z (XOR2_X1)
+                                                          0.05       1.21 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_1/U3/ZN (AOI22_X1)
+                                                          0.06       1.27 r
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_1/U2/ZN (INV_X1)
+                                                          0.03       1.30 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_1/Co (FA_412)
+                                                          0.00       1.30 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_2/Ci (FA_411)
+                                                          0.00       1.30 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_2/U3/ZN (AOI22_X1)
+                                                          0.06       1.36 r
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_2/U2/ZN (INV_X1)
+                                                          0.03       1.39 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_2/Co (FA_411)
+                                                          0.00       1.39 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_3/Ci (FA_410)
+                                                          0.00       1.39 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_3/U3/ZN (AOI22_X1)
+                                                          0.06       1.45 r
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_3/U2/ZN (INV_X1)
+                                                          0.03       1.48 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_3/Co (FA_410)
+                                                          0.00       1.48 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_4/Ci (FA_409)
+                                                          0.00       1.48 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_4/U1/Z (XOR2_X1)
+                                                          0.07       1.55 f
+  add_1/sum_generator/cs_blocks_5/rca_1/FAI_4/S (FA_409)
+                                                          0.00       1.55 f
+  add_1/sum_generator/cs_blocks_5/rca_1/S[3] (RCA_N4_103)
+                                                          0.00       1.55 f
+  add_1/sum_generator/cs_blocks_5/mux/A[3] (MUX21_GENERIC_N4_52)
+                                                          0.00       1.55 f
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/A (MUX21_205)
+                                                          0.00       1.55 f
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND1/A (ND2_615)
+                                                          0.00       1.55 f
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND1/U1/ZN (NAND2_X1)
+                                                          0.03       1.58 r
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND1/Y (ND2_615)
+                                                          0.00       1.58 r
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND3/A (ND2_613)
+                                                          0.00       1.58 r
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       1.63 f
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/UND3/Y (ND2_613)
+                                                          0.00       1.63 f
+  add_1/sum_generator/cs_blocks_5/mux/muxes_3/Y (MUX21_205)
+                                                          0.00       1.63 f
+  add_1/sum_generator/cs_blocks_5/mux/Y[3] (MUX21_GENERIC_N4_52)
+                                                          0.00       1.63 f
+  add_1/sum_generator/cs_blocks_5/S[3] (CS_BLOCK_carry_step4_52)
+                                                          0.00       1.63 f
+  add_1/sum_generator/Sum[19] (carry_select_N32_carry_step4_K8_0)
+                                                          0.00       1.63 f
+  add_1/S[19] (p4_adder_N32_carry_step4_K8_0)             0.00       1.63 f
+  add_2/A[19] (p4_adder_N32_carry_step4_K8_6)             0.00       1.63 f
+  add_2/carry_generator/A[19] (sparse_tree_N32_carry_step4_K8_6)
+                                                          0.00       1.63 f
+  add_2/carry_generator/row_0/A[19] (pg_network_N32_6)
+                                                          0.00       1.63 f
+  add_2/carry_generator/row_0/U22/Z (XOR2_X1)             0.09       1.72 f
+  add_2/carry_generator/row_0/P[19] (pg_network_N32_6)
+                                                          0.00       1.72 f
+  add_2/carry_generator/pg_blocks_1_1_19/Pik (pg_block_154)
+                                                          0.00       1.72 f
+  add_2/carry_generator/pg_blocks_1_1_19/U3/ZN (AOI21_X1)
+                                                          0.05       1.77 r
+  add_2/carry_generator/pg_blocks_1_1_19/U2/ZN (INV_X1)
+                                                          0.02       1.79 f
+  add_2/carry_generator/pg_blocks_1_1_19/Gij (pg_block_154)
+                                                          0.00       1.79 f
+  add_2/carry_generator/pg_blocks_1_2_19/Gik (pg_block_144)
+                                                          0.00       1.79 f
+  add_2/carry_generator/pg_blocks_1_2_19/U3/ZN (AOI21_X1)
+                                                          0.05       1.85 r
+  add_2/carry_generator/pg_blocks_1_2_19/U2/ZN (INV_X1)
+                                                          0.03       1.87 f
+  add_2/carry_generator/pg_blocks_1_2_19/Gij (pg_block_144)
+                                                          0.00       1.87 f
+  add_2/carry_generator/g_blocks_2_5_19_1/Gik (g_block_49)
+                                                          0.00       1.87 f
+  add_2/carry_generator/g_blocks_2_5_19_1/U2/ZN (AOI21_X1)
+                                                          0.05       1.93 r
+  add_2/carry_generator/g_blocks_2_5_19_1/U1/ZN (INV_X1)
+                                                          0.05       1.97 f
+  add_2/carry_generator/g_blocks_2_5_19_1/Gij (g_block_49)
+                                                          0.00       1.97 f
+  add_2/carry_generator/Cout[4] (sparse_tree_N32_carry_step4_K8_6)
+                                                          0.00       1.97 f
+  add_2/sum_generator/Ci[5] (carry_select_N32_carry_step4_K8_6)
+                                                          0.00       1.97 f
+  add_2/sum_generator/cs_blocks_6/ci (CS_BLOCK_carry_step4_43)
+                                                          0.00       1.97 f
+  add_2/sum_generator/cs_blocks_6/mux/SEL (MUX21_GENERIC_N4_43)
+                                                          0.00       1.97 f
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/S (MUX21_172)
+                                                          0.00       1.97 f
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND1/B (ND2_516)
+                                                          0.00       1.97 f
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND1/U1/ZN (NAND2_X1)
+                                                          0.04       2.01 r
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND1/Y (ND2_516)
+                                                          0.00       2.01 r
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND3/A (ND2_514)
+                                                          0.00       2.01 r
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       2.07 f
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/UND3/Y (ND2_514)
+                                                          0.00       2.07 f
+  add_2/sum_generator/cs_blocks_6/mux/muxes_0/Y (MUX21_172)
+                                                          0.00       2.07 f
+  add_2/sum_generator/cs_blocks_6/mux/Y[0] (MUX21_GENERIC_N4_43)
+                                                          0.00       2.07 f
+  add_2/sum_generator/cs_blocks_6/S[0] (CS_BLOCK_carry_step4_43)
+                                                          0.00       2.07 f
+  add_2/sum_generator/Sum[20] (carry_select_N32_carry_step4_K8_6)
+                                                          0.00       2.07 f
+  add_2/S[20] (p4_adder_N32_carry_step4_K8_6)             0.00       2.07 f
+  add_3/A[20] (p4_adder_N32_carry_step4_K8_5)             0.00       2.07 f
+  add_3/sum_generator/A[20] (carry_select_N32_carry_step4_K8_5)
+                                                          0.00       2.07 f
+  add_3/sum_generator/cs_blocks_6/A[0] (CS_BLOCK_carry_step4_35)
+                                                          0.00       2.07 f
+  add_3/sum_generator/cs_blocks_6/rca_1/A[0] (RCA_N4_69)
+                                                          0.00       2.07 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_1/A (FA_276)
+                                                          0.00       2.07 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_1/U4/Z (XOR2_X1)
+                                                          0.09       2.15 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_1/U3/ZN (AOI22_X1)
+                                                          0.06       2.21 r
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_1/U2/ZN (INV_X1)
+                                                          0.03       2.24 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_1/Co (FA_276)
+                                                          0.00       2.24 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_2/Ci (FA_275)
+                                                          0.00       2.24 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_2/U3/ZN (AOI22_X1)
+                                                          0.06       2.30 r
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_2/U2/ZN (INV_X1)
+                                                          0.03       2.33 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_2/Co (FA_275)
+                                                          0.00       2.33 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_3/Ci (FA_274)
+                                                          0.00       2.33 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_3/U3/ZN (AOI22_X1)
+                                                          0.06       2.39 r
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_3/U2/ZN (INV_X1)
+                                                          0.03       2.42 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_3/Co (FA_274)
+                                                          0.00       2.42 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_4/Ci (FA_273)
+                                                          0.00       2.42 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_4/U1/Z (XOR2_X1)
+                                                          0.07       2.49 f
+  add_3/sum_generator/cs_blocks_6/rca_1/FAI_4/S (FA_273)
+                                                          0.00       2.49 f
+  add_3/sum_generator/cs_blocks_6/rca_1/S[3] (RCA_N4_69)
+                                                          0.00       2.49 f
+  add_3/sum_generator/cs_blocks_6/mux/A[3] (MUX21_GENERIC_N4_35)
+                                                          0.00       2.49 f
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/A (MUX21_137)
+                                                          0.00       2.49 f
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND1/A (ND2_411)
+                                                          0.00       2.49 f
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND1/U1/ZN (NAND2_X1)
+                                                          0.03       2.52 r
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND1/Y (ND2_411)
+                                                          0.00       2.52 r
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND3/A (ND2_409)
+                                                          0.00       2.52 r
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       2.58 f
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/UND3/Y (ND2_409)
+                                                          0.00       2.58 f
+  add_3/sum_generator/cs_blocks_6/mux/muxes_3/Y (MUX21_137)
+                                                          0.00       2.58 f
+  add_3/sum_generator/cs_blocks_6/mux/Y[3] (MUX21_GENERIC_N4_35)
+                                                          0.00       2.58 f
+  add_3/sum_generator/cs_blocks_6/S[3] (CS_BLOCK_carry_step4_35)
+                                                          0.00       2.58 f
+  add_3/sum_generator/Sum[23] (carry_select_N32_carry_step4_K8_5)
+                                                          0.00       2.58 f
+  add_3/S[23] (p4_adder_N32_carry_step4_K8_5)             0.00       2.58 f
+  add_4/A[23] (p4_adder_N32_carry_step4_K8_4)             0.00       2.58 f
+  add_4/carry_generator/A[23] (sparse_tree_N32_carry_step4_K8_4)
+                                                          0.00       2.58 f
+  add_4/carry_generator/row_0/A[23] (pg_network_N32_4)
+                                                          0.00       2.58 f
+  add_4/carry_generator/row_0/U17/Z (XOR2_X1)             0.09       2.67 f
+  add_4/carry_generator/row_0/P[23] (pg_network_N32_4)
+                                                          0.00       2.67 f
+  add_4/carry_generator/pg_blocks_1_1_23/Pik (pg_block_98)
+                                                          0.00       2.67 f
+  add_4/carry_generator/pg_blocks_1_1_23/U3/ZN (AOI21_X1)
+                                                          0.05       2.72 r
+  add_4/carry_generator/pg_blocks_1_1_23/U2/ZN (INV_X1)
+                                                          0.02       2.74 f
+  add_4/carry_generator/pg_blocks_1_1_23/Gij (pg_block_98)
+                                                          0.00       2.74 f
+  add_4/carry_generator/pg_blocks_1_2_23/Gik (pg_block_89)
+                                                          0.00       2.74 f
+  add_4/carry_generator/pg_blocks_1_2_23/U3/ZN (AOI21_X1)
+                                                          0.05       2.79 r
+  add_4/carry_generator/pg_blocks_1_2_23/U2/ZN (INV_X1)
+                                                          0.02       2.81 f
+  add_4/carry_generator/pg_blocks_1_2_23/Gij (pg_block_89)
+                                                          0.00       2.81 f
+  add_4/carry_generator/pg_blocks_1_3_23/Gik (pg_block_85)
+                                                          0.00       2.81 f
+  add_4/carry_generator/pg_blocks_1_3_23/U3/ZN (AOI21_X1)
+                                                          0.05       2.87 r
+  add_4/carry_generator/pg_blocks_1_3_23/U2/ZN (INV_X1)
+                                                          0.03       2.90 f
+  add_4/carry_generator/pg_blocks_1_3_23/Gij (pg_block_85)
+                                                          0.00       2.90 f
+  add_4/carry_generator/g_blocks_2_5_23_1/Gik (g_block_30)
+                                                          0.00       2.90 f
+  add_4/carry_generator/g_blocks_2_5_23_1/U2/ZN (AOI21_X1)
+                                                          0.06       2.95 r
+  add_4/carry_generator/g_blocks_2_5_23_1/U1/ZN (INV_X1)
+                                                          0.05       3.00 f
+  add_4/carry_generator/g_blocks_2_5_23_1/Gij (g_block_30)
+                                                          0.00       3.00 f
+  add_4/carry_generator/Cout[5] (sparse_tree_N32_carry_step4_K8_4)
+                                                          0.00       3.00 f
+  add_4/sum_generator/Ci[6] (carry_select_N32_carry_step4_K8_4)
+                                                          0.00       3.00 f
+  add_4/sum_generator/cs_blocks_7/ci (CS_BLOCK_carry_step4_26)
+                                                          0.00       3.00 f
+  add_4/sum_generator/cs_blocks_7/mux/SEL (MUX21_GENERIC_N4_26)
+                                                          0.00       3.00 f
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/S (MUX21_104)
+                                                          0.00       3.00 f
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND1/B (ND2_312)
+                                                          0.00       3.00 f
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND1/U1/ZN (NAND2_X1)
+                                                          0.04       3.04 r
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND1/Y (ND2_312)
+                                                          0.00       3.04 r
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND3/A (ND2_310)
+                                                          0.00       3.04 r
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       3.09 f
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/UND3/Y (ND2_310)
+                                                          0.00       3.09 f
+  add_4/sum_generator/cs_blocks_7/mux/muxes_0/Y (MUX21_104)
+                                                          0.00       3.09 f
+  add_4/sum_generator/cs_blocks_7/mux/Y[0] (MUX21_GENERIC_N4_26)
+                                                          0.00       3.09 f
+  add_4/sum_generator/cs_blocks_7/S[0] (CS_BLOCK_carry_step4_26)
+                                                          0.00       3.09 f
+  add_4/sum_generator/Sum[24] (carry_select_N32_carry_step4_K8_4)
+                                                          0.00       3.09 f
+  add_4/S[24] (p4_adder_N32_carry_step4_K8_4)             0.00       3.09 f
+  add_5/A[24] (p4_adder_N32_carry_step4_K8_3)             0.00       3.09 f
+  add_5/sum_generator/A[24] (carry_select_N32_carry_step4_K8_3)
+                                                          0.00       3.09 f
+  add_5/sum_generator/cs_blocks_7/A[0] (CS_BLOCK_carry_step4_18)
+                                                          0.00       3.09 f
+  add_5/sum_generator/cs_blocks_7/rca_1/A[0] (RCA_N4_35)
+                                                          0.00       3.09 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_1/A (FA_140)
+                                                          0.00       3.09 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_1/U4/Z (XOR2_X1)
+                                                          0.09       3.18 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_1/U3/ZN (AOI22_X1)
+                                                          0.06       3.24 r
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_1/U2/ZN (INV_X1)
+                                                          0.03       3.27 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_1/Co (FA_140)
+                                                          0.00       3.27 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_2/Ci (FA_139)
+                                                          0.00       3.27 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_2/U3/ZN (AOI22_X1)
+                                                          0.06       3.33 r
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_2/U2/ZN (INV_X1)
+                                                          0.03       3.36 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_2/Co (FA_139)
+                                                          0.00       3.36 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_3/Ci (FA_138)
+                                                          0.00       3.36 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_3/U3/ZN (AOI22_X1)
+                                                          0.06       3.42 r
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_3/U2/ZN (INV_X1)
+                                                          0.03       3.45 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_3/Co (FA_138)
+                                                          0.00       3.45 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_4/Ci (FA_137)
+                                                          0.00       3.45 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_4/U1/Z (XOR2_X1)
+                                                          0.07       3.52 f
+  add_5/sum_generator/cs_blocks_7/rca_1/FAI_4/S (FA_137)
+                                                          0.00       3.52 f
+  add_5/sum_generator/cs_blocks_7/rca_1/S[3] (RCA_N4_35)
+                                                          0.00       3.52 f
+  add_5/sum_generator/cs_blocks_7/mux/A[3] (MUX21_GENERIC_N4_18)
+                                                          0.00       3.52 f
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/A (MUX21_69)
+                                                          0.00       3.52 f
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND1/A (ND2_207)
+                                                          0.00       3.52 f
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND1/U1/ZN (NAND2_X1)
+                                                          0.03       3.55 r
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND1/Y (ND2_207)
+                                                          0.00       3.55 r
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND3/A (ND2_205)
+                                                          0.00       3.55 r
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       3.60 f
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/UND3/Y (ND2_205)
+                                                          0.00       3.60 f
+  add_5/sum_generator/cs_blocks_7/mux/muxes_3/Y (MUX21_69)
+                                                          0.00       3.60 f
+  add_5/sum_generator/cs_blocks_7/mux/Y[3] (MUX21_GENERIC_N4_18)
+                                                          0.00       3.60 f
+  add_5/sum_generator/cs_blocks_7/S[3] (CS_BLOCK_carry_step4_18)
+                                                          0.00       3.60 f
+  add_5/sum_generator/Sum[27] (carry_select_N32_carry_step4_K8_3)
+                                                          0.00       3.60 f
+  add_5/S[27] (p4_adder_N32_carry_step4_K8_3)             0.00       3.60 f
+  add_6/A[27] (p4_adder_N32_carry_step4_K8_2)             0.00       3.60 f
+  add_6/carry_generator/A[27] (sparse_tree_N32_carry_step4_K8_2)
+                                                          0.00       3.60 f
+  add_6/carry_generator/row_0/A[27] (pg_network_N32_2)
+                                                          0.00       3.60 f
+  add_6/carry_generator/row_0/U13/Z (XOR2_X1)             0.09       3.69 f
+  add_6/carry_generator/row_0/P[27] (pg_network_N32_2)
+                                                          0.00       3.69 f
+  add_6/carry_generator/pg_blocks_1_1_27/Pik (pg_block_42)
+                                                          0.00       3.69 f
+  add_6/carry_generator/pg_blocks_1_1_27/U3/ZN (AOI21_X1)
+                                                          0.05       3.74 r
+  add_6/carry_generator/pg_blocks_1_1_27/U2/ZN (INV_X1)
+                                                          0.02       3.76 f
+  add_6/carry_generator/pg_blocks_1_1_27/Gij (pg_block_42)
+                                                          0.00       3.76 f
+  add_6/carry_generator/pg_blocks_1_2_27/Gik (pg_block_34)
+                                                          0.00       3.76 f
+  add_6/carry_generator/pg_blocks_1_2_27/U3/ZN (AOI21_X1)
+                                                          0.05       3.82 r
+  add_6/carry_generator/pg_blocks_1_2_27/U2/ZN (INV_X1)
+                                                          0.03       3.84 f
+  add_6/carry_generator/pg_blocks_1_2_27/Gij (pg_block_34)
+                                                          0.00       3.84 f
+  add_6/carry_generator/pg_blocks_2_4_27_2/Gik (pg_block_29)
+                                                          0.00       3.84 f
+  add_6/carry_generator/pg_blocks_2_4_27_2/U3/ZN (AOI21_X1)
+                                                          0.05       3.90 r
+  add_6/carry_generator/pg_blocks_2_4_27_2/U2/ZN (INV_X1)
+                                                          0.02       3.92 f
+  add_6/carry_generator/pg_blocks_2_4_27_2/Gij (pg_block_29)
+                                                          0.00       3.92 f
+  add_6/carry_generator/g_blocks_2_5_27_1/Gik (g_block_11)
+                                                          0.00       3.92 f
+  add_6/carry_generator/g_blocks_2_5_27_1/U2/ZN (AOI21_X1)
+                                                          0.05       3.97 r
+  add_6/carry_generator/g_blocks_2_5_27_1/U1/ZN (INV_X1)
+                                                          0.05       4.02 f
+  add_6/carry_generator/g_blocks_2_5_27_1/Gij (g_block_11)
+                                                          0.00       4.02 f
+  add_6/carry_generator/Cout[6] (sparse_tree_N32_carry_step4_K8_2)
+                                                          0.00       4.02 f
+  add_6/sum_generator/Ci[7] (carry_select_N32_carry_step4_K8_2)
+                                                          0.00       4.02 f
+  add_6/sum_generator/cs_blocks_8/ci (CS_BLOCK_carry_step4_9)
+                                                          0.00       4.02 f
+  add_6/sum_generator/cs_blocks_8/mux/SEL (MUX21_GENERIC_N4_9)
+                                                          0.00       4.02 f
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/S (MUX21_36)
+                                                          0.00       4.02 f
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND1/B (ND2_108)
+                                                          0.00       4.02 f
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND1/U1/ZN (NAND2_X1)
+                                                          0.04       4.06 r
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND1/Y (ND2_108)
+                                                          0.00       4.06 r
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND3/A (ND2_106)
+                                                          0.00       4.06 r
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND3/U1/ZN (NAND2_X1)
+                                                          0.05       4.11 f
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/UND3/Y (ND2_106)
+                                                          0.00       4.11 f
+  add_6/sum_generator/cs_blocks_8/mux/muxes_0/Y (MUX21_36)
+                                                          0.00       4.11 f
+  add_6/sum_generator/cs_blocks_8/mux/Y[0] (MUX21_GENERIC_N4_9)
+                                                          0.00       4.11 f
+  add_6/sum_generator/cs_blocks_8/S[0] (CS_BLOCK_carry_step4_9)
+                                                          0.00       4.11 f
+  add_6/sum_generator/Sum[28] (carry_select_N32_carry_step4_K8_2)
+                                                          0.00       4.11 f
+  add_6/S[28] (p4_adder_N32_carry_step4_K8_2)             0.00       4.11 f
+  add_7/A[28] (p4_adder_N32_carry_step4_K8_1)             0.00       4.11 f
+  add_7/sum_generator/A[28] (carry_select_N32_carry_step4_K8_1)
+                                                          0.00       4.11 f
+  add_7/sum_generator/cs_blocks_8/A[0] (CS_BLOCK_carry_step4_1)
+                                                          0.00       4.11 f
+  add_7/sum_generator/cs_blocks_8/rca_1/A[0] (RCA_N4_1)
+                                                          0.00       4.11 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_1/A (FA_4)
+                                                          0.00       4.11 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_1/U4/Z (XOR2_X1)
+                                                          0.09       4.20 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_1/U3/ZN (AOI22_X1)
+                                                          0.06       4.26 r
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_1/U2/ZN (INV_X1)
+                                                          0.03       4.29 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_1/Co (FA_4)
+                                                          0.00       4.29 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_2/Ci (FA_3)
+                                                          0.00       4.29 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_2/U3/ZN (AOI22_X1)
+                                                          0.06       4.35 r
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_2/U2/ZN (INV_X1)
+                                                          0.03       4.38 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_2/Co (FA_3)
+                                                          0.00       4.38 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_3/Ci (FA_2)
+                                                          0.00       4.38 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_3/U3/ZN (AOI22_X1)
+                                                          0.06       4.44 r
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_3/U2/ZN (INV_X1)
+                                                          0.03       4.47 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_3/Co (FA_2)
+                                                          0.00       4.47 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_4/Ci (FA_1)
+                                                          0.00       4.47 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_4/U1/Z (XOR2_X1)
+                                                          0.07       4.54 f
+  add_7/sum_generator/cs_blocks_8/rca_1/FAI_4/S (FA_1)
+                                                          0.00       4.54 f
+  add_7/sum_generator/cs_blocks_8/rca_1/S[3] (RCA_N4_1)
+                                                          0.00       4.54 f
+  add_7/sum_generator/cs_blocks_8/mux/A[3] (MUX21_GENERIC_N4_1)
+                                                          0.00       4.54 f
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/A (MUX21_1)
+                                                          0.00       4.54 f
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND1/A (ND2_3)
+                                                          0.00       4.54 f
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND1/U1/ZN (NAND2_X1)
+                                                          0.03       4.57 r
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND1/Y (ND2_3)
+                                                          0.00       4.57 r
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND3/A (ND2_1)
+                                                          0.00       4.57 r
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.02       4.59 f
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/UND3/Y (ND2_1)
+                                                          0.00       4.59 f
+  add_7/sum_generator/cs_blocks_8/mux/muxes_3/Y (MUX21_1)
+                                                          0.00       4.59 f
+  add_7/sum_generator/cs_blocks_8/mux/Y[3] (MUX21_GENERIC_N4_1)
+                                                          0.00       4.59 f
+  add_7/sum_generator/cs_blocks_8/S[3] (CS_BLOCK_carry_step4_1)
+                                                          0.00       4.59 f
+  add_7/sum_generator/Sum[31] (carry_select_N32_carry_step4_K8_1)
+                                                          0.00       4.59 f
+  add_7/S[31] (p4_adder_N32_carry_step4_K8_1)             0.00       4.59 f
+  P[31] (out)                                             0.00       4.59 f
+  data arrival time                                                  4.59
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
